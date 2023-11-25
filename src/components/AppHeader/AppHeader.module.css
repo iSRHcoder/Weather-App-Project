@@ -1,0 +1,9 @@
+.AppHeader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 5rem;
+
+  box-shadow: 5px 5px 5px 1px #041b2d;
+}

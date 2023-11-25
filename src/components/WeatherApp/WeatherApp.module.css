@@ -1,0 +1,120 @@
+.container {
+  width: 65rem;
+  height: 35rem;
+  margin: 0;
+  padding: 0;
+  background-color: #b8c8d0;
+  opacity: 0.75;
+  border-radius: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid #4b6128;
+}
+
+.box {
+  width: 60rem;
+  height: 33rem;
+  border-radius: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timeDate {
+  width: 56rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: monospace;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.tempCelcius {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.temp {
+  font-family: monospace;
+  font-size: 4rem;
+  letter-spacing: -0.2rem;
+  margin-top: 1.5rem;
+}
+
+.celcius {
+  margin-left: 0.5rem;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+
+.cityAndLogo {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.city {
+  font-family: monospace;
+  font-size: 5rem;
+}
+
+.checkWeatherButton {
+  width: 18rem;
+  height: 4rem;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: black;
+}
+
+.inputButton {
+  width: 65rem;
+  height: 5rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 3rem;
+  border: 0.5rem solid #4b6128;
+}
+
+.inputButton > input {
+  width: 44rem;
+  height: 4rem;
+  font-family: monospace;
+  font-size: 2.5rem;
+  border: 0rem solid #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  margin-bottom: 0.05rem;
+}
+
+.data {
+  width: 55rem;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.item {
+  width: fit-content;
+  font-family: monospace;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 4rem;
+}

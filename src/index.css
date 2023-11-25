@@ -1,0 +1,14 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/Images/v2osk-1Z2niiBPg5A-unsplash.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay;
+}
