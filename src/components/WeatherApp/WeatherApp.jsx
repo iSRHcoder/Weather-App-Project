@@ -133,12 +133,12 @@ const WeatherApp = () => {
           onChange={(e) => cityInputHandler(e.target.value)}
           onKeyUp={enterKeyHandler}
         />
-        <Button
+        <button
           className={style.checkWeatherButton}
           onClick={buttonClickHandler}
         >
           Check
-        </Button>
+        </button>
       </div>
 
       {isLoader && <Loader />}
