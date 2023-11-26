@@ -54,7 +54,6 @@ const WeatherApp = () => {
       setIsError(false);
       getWeatherReport(city)
         .then((res) => {
-          console.log("res", res.cod);
           if (res.cod === 200) {
             setIsLoader(false);
             setCityName(res.name);
@@ -89,7 +88,7 @@ const WeatherApp = () => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          console.log("position", position);
+
           getWeatherReportByCoords(latitude, longitude)
             .then((res) => {
               if (res.cod === 200) {
