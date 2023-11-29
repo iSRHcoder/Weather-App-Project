@@ -64,7 +64,7 @@ const WeatherApp = () => {
             setTempInCel((res.main.temp - 273.15).toFixed(2));
             setHumidity(res.main.humidity);
             setPressure(res.main.pressure);
-          } else if (res.cod !== 404) {
+          } else if (res.cod == 404) {
             setIsLoader(false);
             setIsError(true);
             setErrorMsg("City Not Found, Enter Valid city...!");
@@ -101,7 +101,7 @@ const WeatherApp = () => {
                 setTempInCel((res.main.temp - 273.15).toFixed(2));
                 setHumidity(res.main.humidity);
                 setPressure(res.main.pressure);
-              } else if (res.cod !== 404) {
+              } else if (res.cod == 404) {
                 setIsLoader(false);
                 setIsError(true);
                 setErrorMsg("City Not Found, Enter Valid city...!");
