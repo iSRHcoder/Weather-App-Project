@@ -54,17 +54,17 @@ const WeatherApp = () => {
       setIsError(false);
       getWeatherReport(city)
         .then((res) => {
-          if (res.cod === 200) {
+          if (res.data.cod === 200) {
             setIsLoader(false);
-            setCityName(res.name);
-            setCloud(res.weather[0].description);
-            setSunrise(timestampToTime(res.sys.sunrise));
-            setSunset(timestampToTime(res.sys.sunset));
-            setWind(res.wind.speed);
-            setTempInCel((res.main.temp - 273.15).toFixed(2));
-            setHumidity(res.main.humidity);
-            setPressure(res.main.pressure);
-          } else if (res.cod == 404) {
+            setCityName(res.data.name);
+            setCloud(res.data.weather[0].description);
+            setSunrise(timestampToTime(res.data.sys.sunrise));
+            setSunset(timestampToTime(res.data.sys.sunset));
+            setWind(res.data.wind.speed);
+            setTempInCel((res.data.main.temp - 273.15).toFixed(2));
+            setHumidity(res.data.main.humidity);
+            setPressure(res.data.main.pressure);
+          } else if (res.data.cod == 404) {
             setIsLoader(false);
             setIsError(true);
             setErrorMsg("City Not Found, Enter Valid city...!");
@@ -91,17 +91,17 @@ const WeatherApp = () => {
 
           getWeatherReportByCoords(latitude, longitude)
             .then((res) => {
-              if (res.cod === 200) {
+              if (res.data.cod === 200) {
                 setIsLoader(false);
-                setCityName(res.name);
-                setCloud(res.weather[0].description);
-                setSunrise(timestampToTime(res.sys.sunrise));
-                setSunset(timestampToTime(res.sys.sunset));
-                setWind(res.wind.speed);
-                setTempInCel((res.main.temp - 273.15).toFixed(2));
-                setHumidity(res.main.humidity);
-                setPressure(res.main.pressure);
-              } else if (res.cod == 404) {
+                setCityName(res.data.name);
+                setCloud(res.data.weather[0].description);
+                setSunrise(timestampToTime(res.data.sys.sunrise));
+                setSunset(timestampToTime(res.data.sys.sunset));
+                setWind(res.data.wind.speed);
+                setTempInCel((res.data.main.temp - 273.15).toFixed(2));
+                setHumidity(res.data.main.humidity);
+                setPressure(res.data.main.pressure);
+              } else if (res.data.cod == 404) {
                 setIsLoader(false);
                 setIsError(true);
                 setErrorMsg("City Not Found, Enter Valid city...!");
